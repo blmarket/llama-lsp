@@ -29,7 +29,7 @@ the launching llama-server process.
 Add this line to your init.vim
 
 ```vim
-  :lua vim.lsp.start({ name = 'llamacpp-lsp', cmd = { '/home/blmarket/proj/llm-lsp/target/release/llm-lsp', }, })
+  :lua vim.lsp.start({ name = 'llama-lsp', cmd = { '/home/blmarket/proj/llama-lsp/target/release/llama-lsp', }, })
 ```
 
 (It means you need to build llm-lsp first)
