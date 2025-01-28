@@ -705,15 +705,30 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4ee93343901ab17bd981295f2cf0026d4ad018c7c31ba84549a4ddbb47a45104"
 
 [[package]]
+name = "llama-lsp"
+version = "0.1.0"
+dependencies = [
+ "llm-daemon",
+ "lsp-server",
+ "lsp-types",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "llama_cpp_low"
-version = "0.5.5"
+version = "0.5.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "49981d07bdca64dd2b0d27b739200e0727264152d2f79586c598e441e4e1378f"
 dependencies = [
  "cmake",
 ]
 
 [[package]]
 name = "llm-daemon"
-version = "0.5.5"
+version = "0.5.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "23c5c9260e250adac7504ee91ee1349009878d55fc8be87538782cbe25a2af18"
 dependencies = [
  "anyhow",
  "axum",
@@ -730,17 +745,6 @@ dependencies = [
  "tracing",
  "tracing-subscriber",
  "url",
-]
-
-[[package]]
-name = "llm-lsp"
-version = "0.1.0"
-dependencies = [
- "llm-daemon",
- "lsp-server",
- "lsp-types",
- "serde",
- "serde_json",
 ]
 
 [[package]]
